@@ -8,7 +8,9 @@
 
 **A data visualization dashboard that turns engagement metrics into an immersive retro arcade experience**
 
-![Brut Dashboard Preview](https://via.placeholder.com/800x400/0a0a0a/39ff14?text=BRUT+ENGAGEMENT+DASHBOARD)
+![image](https://github.com/user-attachments/assets/aed95baa-4563-4b0d-a87b-eefe94650e87)
+![image](https://github.com/user-attachments/assets/3204414d-3275-4b1b-9b67-61c658a559d2)
+
 
 </div>
 
