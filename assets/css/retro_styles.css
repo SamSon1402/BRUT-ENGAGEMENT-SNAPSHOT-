@@ -1,0 +1,548 @@
+/* 
+ * Retro Gaming CSS Styles for Brut Engagement Dashboard 
+ * This file contains all the styling for the retro gaming aesthetic
+ */
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Space+Mono&display=swap');
+
+/* Main Page */
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #121212 !important;
+}
+
+/* Retro Gaming Title */
+.retro-title {
+    font-family: 'VT323', monospace;
+    text-align: center;
+    color: #39ff14;
+    font-size: 3.5rem;
+    text-shadow: 4px 4px 0px #ff00ff, 0 0 5px #39ff14;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #0a0a0a;
+    background-image: linear-gradient(90deg, #0a0a0a 25%, #1f1f1f 25%, #1f1f1f 50%, #0a0a0a 50%, #0a0a0a 75%, #1f1f1f 75%, #1f1f1f 100%);
+    background-size: 4px 4px;
+    border: 4px solid #39ff14;
+    box-shadow: 8px 8px 0px #ff00ff, 0 0 10px rgba(57, 255, 20, 0.7);
+}
+
+/* KPI Boxes */
+.kpi-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.kpi-box {
+    font-family: 'VT323', monospace;
+    text-align: center;
+    background-color: #0a0a0a;
+    color: #fff;
+    padding: 15px;
+    border: 3px solid;
+    box-shadow: 5px 5px 0px #000, 0 0 8px rgba(255, 255, 255, 0.2);
+    width: 23%;
+}
+
+.kpi-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.kpi-value {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0 0 8px currentColor;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: #0a0a0a !important;
+    background-image: linear-gradient(90deg, #0a0a0a 25%, #1f1f1f 25%, #1f1f1f 50%, #0a0a0a 50%, #0a0a0a 75%, #1f1f1f 75%, #1f1f1f 100%);
+    background-size: 4px 4px;
+}
+
+[data-testid="stSidebarNav"] li div {
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
+    color: #39ff14 !important;
+    text-shadow: 2px 2px 0px #ff00ff, 0 0 5px #39ff14;
+}
+
+/* Filters */
+.stSelectbox div[data-baseweb="select"] {
+    border: 2px solid #39ff14 !important;
+    font-family: 'Space Mono', monospace;
+}
+
+.stMultiSelect div[data-baseweb="select"] {
+    border: 2px solid #39ff14 !important;
+    font-family: 'Space Mono', monospace;
+}
+
+/* Button */
+.stButton button {
+    font-family: 'VT323', monospace !important;
+    font-size: 1.2rem !important;
+    background-color: #000 !important;
+    color: #39ff14 !important;
+    border: 3px solid #39ff14 !important;
+    box-shadow: 5px 5px 0px #ff00ff !important;
+    transition: all 0.2s !important;
+}
+
+.stButton button:hover {
+    transform: translate(2px, 2px) !important;
+    box-shadow: 3px 3px 0px #ff00ff !important;
+}
+
+/* Loading animation */
+.stProgress .st-bo {
+    background-color: #39ff14 !important;
+}
+
+/* Chart styling */
+.chart-container {
+    background-color: #0a0a0a;
+    border: 3px solid #39ff14;
+    box-shadow: 8px 8px 0px #ff00ff, 0 0 10px rgba(57, 255, 20, 0.3);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Tables */
+.dataframe {
+    font-family: 'Space Mono', monospace !important;
+    border: 2px solid #39ff14 !important;
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.3) !important;
+}
+
+.dataframe th {
+    background-color: #0a0a0a !important;
+    color: #39ff14 !important;
+    font-family: 'VT323', monospace !important;
+    font-size: 1.2rem !important;
+    text-shadow: 0 0 5px rgba(57, 255, 20, 0.5) !important;
+}
+
+.dataframe td {
+    background-color: #1f1f1f !important;
+    color: #fff !important;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Section Headers */
+.section-header {
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+    color: #ff00ff;
+    text-shadow: 2px 2px 0px #39ff14, 0 0 8px #ff00ff;
+    margin: 20px 0 10px 0;
+    border-left: 8px solid #39ff14;
+    padding-left: 10px;
+    background-color: rgba(10, 10, 10, 0.7);
+    padding: 5px 10px;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Tooltip */
+div[data-testid="stTooltipIcon"] {
+    color: #ff00ff !important;
+}
+
+/* Plotly styling */
+.js-plotly-plot {
+    background-color: #0a0a0a !important;
+}
+
+/* Make plots more readable */
+.js-plotly-plot .gtitle, .js-plotly-plot .xtitle, .js-plotly-plot .ytitle {
+    text-shadow: 0 0 5px currentColor !important;
+}
+
+.js-plotly-plot .traces {
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.3)) !important;
+}
+
+/* Number Highlighter Effect */
+.number-highlight {
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 8px currentColor;
+    z-index: 1;
+}
+
+.number-highlight::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    right: -2px;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0, 102, 255, 0.4), rgba(0, 195, 255, 0.7), rgba(0, 102, 255, 0.4));
+    z-index: -1;
+    border-radius: 3px;
+    animation: pulse 2s infinite;
+    box-shadow: 0 0 8px rgba(0, 153, 255, 0.7);
+}
+
+@keyframes pulse {
+    0% { opacity: 0.7; }
+    50% { opacity: 1; }
+    100% { opacity: 0.7; }
+}
+
+/* For metrics in charts */
+.js-plotly-plot .textpoint {
+    filter: drop-shadow(0 0 5px rgba(0, 153, 255, 0.8)) !important;
+}
+
+/* Number-specific styles in tables */
+.dataframe td:nth-child(n+5) {
+    background: linear-gradient(to right, rgba(0, 102, 255, 0.2), rgba(0, 153, 255, 0.3), rgba(0, 102, 255, 0.2)) !important;
+    font-weight: bold;
+    text-shadow: 0 0 3px rgba(0, 153, 255, 0.8) !important;
+}
+
+/* Animated Background Effects */
+/* Global background animation container */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background-color: #0a0a0a;
+    background-image: 
+        linear-gradient(90deg, rgba(0, 0, 0, 0.3) 50%, transparent 50%),
+        linear-gradient(rgba(0, 0, 0, 0.3) 50%, transparent 50%);
+    background-size: 2px 2px;
+    pointer-events: none;
+}
+
+/* Scanline effect */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.03) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    animation: scanline 8s linear infinite;
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+@keyframes scanline {
+    0% {
+        transform: translateY(-100vh);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+/* Grid background */
+.grid-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -5;
+    background: 
+        linear-gradient(rgba(19, 42, 76, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(19, 42, 76, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: center center;
+    animation: gridMove 120s linear infinite;
+    transform: perspective(500px) rotateX(60deg);
+    transform-origin: center bottom;
+    pointer-events: none;
+}
+
+@keyframes gridMove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 1000px;
+    }
+}
+
+/* Star particles */
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -8;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    opacity: 0;
+    animation-name: starTwinkle;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes starTwinkle {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-1000px);
+    }
+}
+
+/* CRT flicker effect */
+.crt-flicker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: transparent;
+    opacity: 0.03;
+    pointer-events: none;
+    animation: flicker 0.15s infinite alternate;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.01;
+    }
+    100% {
+        opacity: 0.02;
+    }
+}
+
+/* Glitch effect */
+@keyframes glitch {
+    0% {
+        clip-path: inset(40% 0 61% 0);
+        transform: translate(-20px, -10px);
+    }
+    20% {
+        clip-path: inset(92% 0 1% 0);
+        transform: translate(20px, 10px);
+    }
+    40% {
+        clip-path: inset(43% 0 1% 0);
+        transform: translate(-20px, -10px);
+    }
+    60% {
+        clip-path: inset(25% 0 58% 0);
+        transform: translate(20px, 10px);
+    }
+    80% {
+        clip-path: inset(54% 0 7% 0);
+        transform: translate(-20px, -10px);
+    }
+    100% {
+        clip-path: inset(58% 0 43% 0);
+        transform: translate(20px, 10px);
+    }
+}
+
+/* Retro Animation Overlay */
+.retro-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(
+        ellipse at center,
+        transparent 0%,
+        rgba(10, 10, 10, 0.1) 30%,
+        rgba(10, 10, 10, 0.3) 100%
+    );
+    pointer-events: none;
+    z-index: -3;
+}
+
+/* Neon glow pulse for section headers */
+@keyframes neonPulse {
+    0% {
+        text-shadow: 2px 2px 0px #39ff14, 0 0 8px #ff00ff, 0 0 11px #ff00ff;
+    }
+    50% {
+        text-shadow: 2px 2px 0px #39ff14, 0 0 18px #ff00ff, 0 0 21px #ff00ff;
+    }
+    100% {
+        text-shadow: 2px 2px 0px #39ff14, 0 0 8px #ff00ff, 0 0 11px #ff00ff;
+    }
+}
+
+/* Sidebar animations */
+@keyframes sidebarHover {
+    0% { border-left: 3px solid #39ff14; }
+    50% { border-left: 10px solid #39ff14; box-shadow: 0 0 10px rgba(57, 255, 20, 0.5); }
+    100% { border-left: 3px solid #39ff14; }
+}
+
+.game-controls-title {
+    font-family: 'VT323', monospace;
+    color: #39ff14;
+    text-shadow: 2px 2px 0px #ff00ff, 0 0 10px rgba(57, 255, 20, 0.7);
+    animation: neonPulse 3s infinite;
+    padding-left: 5px;
+    border-left: 3px solid #39ff14;
+    transition: all 0.3s ease;
+}
+
+.game-controls-title:hover {
+    animation: sidebarHover 2s infinite;
+}
+
+@keyframes sectionPulse {
+    0% { border-left: 3px solid #ff00ff; }
+    50% { border-left: 8px solid #ff00ff; box-shadow: 0 0 8px rgba(255, 0, 255, 0.5); }
+    100% { border-left: 3px solid #ff00ff; }
+}
+
+.sidebar-section {
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
+    color: #ff00ff;
+    text-shadow: 2px 2px 0px #39ff14, 0 0 8px rgba(255, 0, 255, 0.5);
+    padding-left: 5px;
+    border-left: 3px solid #ff00ff;
+    margin-top: 20px;
+    animation: sectionPulse 4s infinite;
+}
+
+/* Footer animations */
+@keyframes pixelScan {
+    0% { background-position: -100% 0; }
+    100% { background-position: 200% 0; }
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Loading animation styles */
+@keyframes pixelScanline {
+    0% { background-position: -100% 0; }
+    100% { background-position: 200% 0; }
+}
+
+.loading-container {
+    position: relative;
+    height: 40px;
+    margin: 20px 0;
+    border: 3px solid #39ff14;
+    overflow: hidden;
+    background-color: #0a0a0a;
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.5);
+}
+
+.loading-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    color: white;
+    text-shadow: 0 0 5px #39ff14;
+    z-index: 2;
+}
+
+.loading-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, 
+        rgba(57, 255, 20, 0.6),
+        rgba(57, 255, 20, 0.8),
+        rgba(57, 255, 20, 0.6));
+    transition: width 0.05s linear;
+    z-index: 1;
+}
+
+.loading-scanline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(57, 255, 20, 0.4) 50%,
+        transparent 100%);
+    background-size: 200% 100%;
+    animation: pixelScanline 1s linear infinite;
+    z-index: 3;
+    pointer-events: none;
+}
+
+/* High score animation */
+@keyframes blueHighlight {
+    0% { background-color: rgba(0, 102, 255, 0.2); }
+    50% { background-color: rgba(0, 153, 255, 0.6); }
+    100% { background-color: rgba(0, 102, 255, 0.2); }
+}
+
+.high-score {
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px #0099ff;
+    background-color: rgba(0, 102, 255, 0.4);
+    padding: 5px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    animation: blueHighlight 1.5s infinite;
+    margin: 10px 0;
+}
+
+/* Make the background dark but not pure black for better contrast */
+body {
+    background-color: #121212 !important;
+    color: #fff !important;
+}
+
+/* Additional text contrast enhancement */
+p, span, div {
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+/* Add text outlines to improve readability */
+.stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+}
