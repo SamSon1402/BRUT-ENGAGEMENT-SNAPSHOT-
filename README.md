@@ -112,7 +112,7 @@ streamlit run app.py
 
 <div align="center">
 
-## Made with 💙 by Brut Data Team
+## Made with 💙 for Brut Data Team by sameer(call me sam when we wiil meet in person)
 
 <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white">
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
